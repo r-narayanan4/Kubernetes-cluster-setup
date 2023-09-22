@@ -1,0 +1,12 @@
+---
+- name: Playbook for Kubernetes Installation
+  hosts: all
+  become: true
+  gather_facts: true
+
+  vars_files:
+    - group_vars/vars.yaml
+
+  roles:
+    - k8s
+...
